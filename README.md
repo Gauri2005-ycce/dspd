@@ -25,6 +25,7 @@ c. Demonstrate Overflow and Underflow situations on QUEUE
 d. Display the status of QUEUE
 e. Exit
 Support the program with appropriate functions for each of the above operations.
+
 4	 This C program creates a linked list to store integer elements. It prompts the user to enter elements and add them to the list until the user enters 0. It then traverses the list and prints each element and "=>" until reaching the null pointer. Finally, it displays the number of nodes in the list.
 
 
