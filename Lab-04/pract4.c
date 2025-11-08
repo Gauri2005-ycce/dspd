@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node *next;
+};
+
+int main() {
+    struct Node *head = NULL, *temp, *newNode;
+    int num, count = 0;
+
+    printf("Enter numbers (0 to stop): ");
+    while (1) {
+        scanf("%d", &num);
+        if (num == 0) break;
+        newNode = (struct Node*)malloc(sizeof(struct Node));
+        newNode->data = num;
+        newNode->next = NULL;
+
+        if (head == NULL)
+            head = newNode;
+        else
+            temp->next = newNode;
+
+        temp = newNode;
+        count++;
+    }
+
+    printf("\nLinked List: ");
+    temp = head;
+    while (temp != NULL) {
+        printf("%d => ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\nTotal Nodes: %d\n", count);
+
+    return 0;
+}
